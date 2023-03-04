@@ -9,8 +9,7 @@ print("[7] Years")
 print("[8] EXIT")
 
 user_choice = input("Enter your choice above: ")
-while user_choice in ["1", "2", "3", "4", "5", "6", "7"] and user_choice != "8":
-    try:
+while user_choice in ["1", "2", "3", "4", "5", "6", "7"]:
         if user_choice == "1":
             seconds = int(input("Enter the number of seconds: "))
             print("[Seconds]:", seconds)
@@ -67,13 +66,4 @@ while user_choice in ["1", "2", "3", "4", "5", "6", "7"] and user_choice != "8":
             print("[Years]:", months // 12)
         else:
             years = int(input("Enter the number of years: "))
-            print("[Seconds]:", years * 31556952)
-            print("[Minutes]:", years * 525949.2)
-            print("[Hours]:", years * 8765.82)
-            print("[Days]:", years * 365.2425)
-            print("[Weeks]:", years * 52.1775)
-            print("[Months]:", years * 12)
-            print("[Years]:", years)
-        break
-    except ValueError:
-        print("Please enter a valid input.")
+        
